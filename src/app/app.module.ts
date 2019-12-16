@@ -24,7 +24,7 @@ import { AboutComponent } from './components/pages/about/about.component';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
