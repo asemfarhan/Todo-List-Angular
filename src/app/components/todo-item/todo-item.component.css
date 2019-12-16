@@ -1,0 +1,36 @@
+.divdel {
+    flex:1;
+    width: 100%;
+    align-items: right;
+    justify-content: right;
+    justify-items: right;
+    justify-content: flex-end;
+}
+.del {
+    border-radius: 50%;
+    background: rgb(250, 10, 10);
+    color: white;
+    margin-left: 20px;
+    padding: 5px 9px;
+    float: right;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.isCompletedCSS{
+    text-decoration: line-through;
+}
+
+.item{
+    background: rgb(202, 201, 199);
+    padding: 10px;
+    flex: 11;
+
+    border-bottom: 1px  rgb(39, 43, 32) dashed ;
+}
+.item :hover{
+    background: rgb(168, 166, 166);
+    border-radius: 15px;
+
+}

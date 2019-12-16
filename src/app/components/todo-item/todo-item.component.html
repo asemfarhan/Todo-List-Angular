@@ -1,0 +1,7 @@
+<div [ngClass]="setClass()" style="display: flex; ">
+    <input (change)="onTaggle(todo)" type="checkbox"  name="c" id="c" >
+    {{todo.title}}
+    <div class="divdel">
+        <input (click)="onDelete()" type="button" value="X"  class="del" alt="Delete">
+    </div> 
+</div>
