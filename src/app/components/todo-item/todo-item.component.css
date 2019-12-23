@@ -24,13 +24,20 @@
 
 .item{
     background: rgb(202, 201, 199);
-    padding: 10px;
+    padding: 5px;
+    align-items: center;
     flex: 11;
-
     border-bottom: 1px  rgb(39, 43, 32) dashed ;
 }
 .item :hover{
     background: rgb(168, 166, 166);
     border-radius: 15px;
+}
+
+.del{
+    align-items: center;   
+    padding: 1px;
+    text-justify: auto;
+
 
 }

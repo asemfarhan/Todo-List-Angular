@@ -39,13 +39,15 @@ p {
   margin: 0 16px;
 }
 
-.content {
+.content1 {
   display: flex;
-  margin: 32px auto;
-  padding: 0 16px;
-  max-width: 960px;
+  padding: 10px;
+  margin-top: 5px;
+ width: 100%;
   flex-direction: column;
+  color: white;
   align-items: center;
+  background:rgb(10, 9, 9) ;
 }
 /* Responsive Styles */
 @media screen and (max-width: 767px) {

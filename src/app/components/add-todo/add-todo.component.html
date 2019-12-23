@@ -1,4 +1,12 @@
 <form class="form" (ngSubmit)="addTodo()">
-    <input type="text" [(ngModel)]="title" name="title" placeholder="Add todo......" class="title">
-    <input type="submit" value="Add Todo" class="btn">
+    <input type="text" 
+    [(ngModel)]="title" 
+    name="title" 
+    maxlength="50"
+    placeholder="Add todo......" 
+    class="form-control title">
+
+    <input type="submit" 
+    value="Add Todo"  
+    class="btn btn-primary">
 </form>

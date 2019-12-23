@@ -15,7 +15,7 @@ const httpHeaderOption=  {
 })
 export class TodoService {
   todoUrl: String = 'https://jsonplaceholder.typicode.com/todos';
-  limit = '?_limit=5';
+  limit = '?_limit=8';
 
   constructor(private http:HttpClient) {
    }

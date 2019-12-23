@@ -1,5 +1,4 @@
 import { Component, OnInit , Output, EventEmitter } from '@angular/core';
-import { Todo } from 'src/app/module/Todo';
 
 @Component({
   selector: 'app-add-todo',
@@ -19,7 +18,8 @@ export class AddTodoComponent implements OnInit {
     const todo1= {
       title : this.title ,
       completed: false}
-      this.addTodoOutput.emit(todo1)
+      if(this.title){
+      this.addTodoOutput.emit(todo1);
+      this.title='';}
   }
-
 }

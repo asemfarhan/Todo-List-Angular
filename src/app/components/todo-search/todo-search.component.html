@@ -1,0 +1,13 @@
+ <div style="display: flex;">
+     <input id="typeahead-basic" 
+    type="text"
+    [ngbTypeahead]="search"
+    placeholder="Search for Todo item...."
+    class="form-control" 
+    [(ngModel)]="model"
+    />
+    <input type="button" (click)="onClick()"  value="Search" name="search" class="">
+</div>
+
+<!--     <pre>Model: {{ model | json }}</pre>
+     (change)="onchange()" -->

@@ -10,6 +10,7 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './components/pages/about/about.component';
+import { TodoSearchComponent } from './components/todo-search/todo-search.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AboutComponent } from './components/pages/about/about.component';
     TodoComponent,
     TodoItemComponent,
     AddTodoComponent,
-    AboutComponent
+    AboutComponent,
+    TodoSearchComponent
   ],
   imports: [
     BrowserModule,

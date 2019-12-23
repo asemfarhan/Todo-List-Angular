@@ -2,22 +2,16 @@
     (addTodoOutput)="addTodoMain($event)"  >
 </app-add-todo>
 
+<app-todo-search
+*ngIf="todos?.length > 0"
+  [todos]="todos"
+  (modelOutput)="searchTodo($event)"
+  >
+</app-todo-search>
+
 <app-todo-item 
-*ngFor="let todo of todos" 
-[todo]="todo"
-(deleteTodo)="deleteTodo($event)">
+    *ngFor="let todo of todos" 
+    [todo]="todo"
+    (deleteTodo)="deleteTodo($event)">
 </app-todo-item>
 
-<div class="btn-group btn-group-toggle">
-    <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
-    </label>
-    <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
-    </label>
-    <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
-    </label>
-  </div>
-  <hr>
-  <pre>{{model | json}}</pre>
