@@ -34,7 +34,7 @@ search = (text$: Observable<string>) =>
       distinctUntilChanged(),
       map(term => term.length < 1 ? []
         : this.all.filter(data => data.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10))) 
-
+ 
 onClick() {
   var text$=this.model
 var assssss=(text$: Observable<string>) =>
