@@ -125,7 +125,10 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "https://github.com/asemfarhan/Todo-List-Angular.git",
+            "name": "Asem Farhan Angular",
+            "email": "asem.m.farhan@gmail.com"}
         }
       }
     }
