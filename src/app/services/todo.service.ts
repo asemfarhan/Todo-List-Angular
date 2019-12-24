@@ -62,12 +62,16 @@ export class TodoService {
    }
 
     
-  getTodo () {
+
   // To enable API https://jsonplaceholder.typicode.com/todos
-  // getTodo () : Observable<Todo[]> {
-  // return this.http.get<Todo[]> (`${this.todoUrl}${this.limit}`)
-    return this.todo_DB;
+  getTodo () : Observable<Todo[]> {
+  return this.http.get<Todo[]> (`${this.todoUrl}${this.limit}`)
   }
+  
+  // To disable API https://jsonplaceholder.typicode.com/todos
+  // getTodo () {
+  //   return this.todo_DB;
+  // }
 
   taggoleCompleted(todo:Todo) : Observable<any> {
       const url= `${this.todoUrl}/${todo.id}`;

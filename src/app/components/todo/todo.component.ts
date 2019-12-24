@@ -19,12 +19,13 @@ export class TodoComponent implements AfterViewInit {
 
 ngAfterViewInit() {
   //server
-  this.todos =this.todoService.getTodo();
   // To enable API https://jsonplaceholder.typicode.com/todos
-  // this.todoService.getTodo().subscribe(data => {this.todos= data;
-  //    this.todo2= data} );
-  this.todo2=  this.todos ;
+  this.todoService.getTodo().subscribe(data => {this.todos= data;
+     this.todo2= data} );
 
+     // To disable API https://jsonplaceholder.typicode.com/todos
+  // this.todos =this.todoService.getTodo();
+  // this.todo2=  this.todos ;
 }
 
 searchTodo(model : String){
